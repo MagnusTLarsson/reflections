@@ -2,3 +2,6 @@ What happens when you initialize a repository? Why do you need to do it?
 
 A "git repository" is created. More or less, some metadata added to the folder (covering that folder and sub directories), which is used by the git system to keep track on files and local history(?). There will be no initial commits, instead, the user needs to "git add" the files which the user desire to track by using git. A git metadata file is created, and visible for inspection if ls -a is used (used to see all files, even those hidden from the users by prepending a '.' infront of the filename).
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area functions as a buffer in between adding new files to track, or new commits to make. It provides an extra stage for making decisions, and provides great value by providing a machanism which will prevent flooding of commits, and tracking of unnecessary files.
