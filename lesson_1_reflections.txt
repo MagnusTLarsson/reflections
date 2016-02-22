@@ -1,0 +1,25 @@
+1. Being able to quickly locate changes in code saves me a great amount of time when trying to find differences between different versions. It will enable me to focus rapidly and track down which modules and specific code that (most likely) is a part of an issue.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+One could save different variations of the same files without risking to lose previous code. Except for being able to step back to an earlier (working?) version, the concepts along one to experiment and try out other possible (better?) solutions.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Keeping it manually prones for user error. One can forget to commit, or one can just do it too often or seldom. But the pros are that you are more in control of the commits. An automatic system can definitely not adjust to all possible scenarios, hence, when to commit in a specific situation is a judgement call.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+The purpose of these services are very different. Google Docs, for example, is focusing in provision of a service to collaborate within ONE document. Dropbox is focusing on delivering a service through which clients can store and access single (big?) files. All in all, they are not focusing on delivering a service that is targeting distributed code/text editing with dependencies.
+
+How can you use the commands git log and git diff to view the history of files?
+
+Using git log, a history of previous commits (IDs, description, dates) are provided. git diff is then used, provided 2 commit IDs to display the differences between the 2 versions of the files affected. + for lines added, - for lines removed.
+
+How might using version control make you more confident to make changes that could break something?
+
+Since I can "easily" step back to previous versions I would feel more comfortable trying out new ideas. For big changes, without this type of version control I might either have to save and stroe large copies at other locations, which introduces a lot of effort, or I might just be too afraid I would break something and not being able to go back to previous stable version.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I would like to try using git for distributed code to see how changes in one file affects the commits, and I'd like to experience how to use different branches.
