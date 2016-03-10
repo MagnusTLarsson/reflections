@@ -3,3 +3,7 @@ When would you want to create a remote repository rather than keeping all your w
 When collaborating, or using multiple platforms, it is an excellent way of accessing common information remotely.
 It is also an advantage to keep units under production in the cloud since the storage is (hopefully) more reliable, scalable, 
 secure and robust.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+There might be inconveniences with testing new code that is collaborately worked upon if it is constantly being pulled (with changes) to my local repository. It might be good to be able to see which changes are made to the remote before pulling them (the commits).
