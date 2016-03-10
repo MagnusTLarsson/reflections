@@ -7,3 +7,7 @@ secure and robust.
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
 There might be inconveniences with testing new code that is collaborately worked upon if it is constantly being pulled (with changes) to my local repository. It might be good to be able to see which changes are made to the remote before pulling them (the commits).
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+A fork works more or less like a clone, but on GitHub. A fork is usable for suggesting and making changes to other individuals work but without changing their repositories (which you might not have permission to do anyway). Forking makes a clone of a remote on GitHub and can be used to preserve the original. By cloning, you can create a local copy of a remote, and then use the remote to store updates (commits) which multiple users/devices can access. A branch is just a chain of commits, where each commit points to its parent(s). The remotes store commits (as branches).
