@@ -16,3 +16,6 @@ What is the benefit of having a copy of the last known state of the remote store
 
 It is possible to work offline, to know the remote's state at a moment in time and working with merging them (without internet access). Later on when you have internet access, you can fetch the new state of the remote. This approach will possibly reduce the amount of conflicts since you were able to solve some of them offline.
 
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Store history manually (if at all), and compare different updates manually. It would take a lot more of time to do everything manually, and if you skip doing version control, you will risk being less creative and risk breaking working functionality. The only easier thing with leaving out the usage of Git and GitHub is that learning how to use the git system (which can be a bit complicated) can be ignored.
