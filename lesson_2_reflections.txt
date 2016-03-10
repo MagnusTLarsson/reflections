@@ -5,3 +5,24 @@ A "git repository" is created. More or less, some metadata added to the folder (
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area functions as a buffer in between adding new files to track, or new commits to make. It provides an extra stage for making decisions, and provides great value by providing a machanism which will prevent flooding of commits, and tracking of unnecessary files.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+When you commit, you commit / "push" the files at the staging area to the repository. To add files to the staging area you use the git add command. One can make sure only to add files to the staging area of the same logical belonging, and then commiting them together. To inspect changes between non-commits (working dir/staging area) use git diff. For files in the staging area and latest commit: git diff --staged (stage?). Finally, for commits: git diff commit1 commit2. If you use git reset --hard you reset all the changes to the files at the staging area and in the working directory.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Using branches can help users with many issues. It can provide support for trying out different version simultaniously, and add the same time it can let users work on different parts of a project in parallell, while merging branches as progress moves onwards.
+
+How do the diagrams help you visualize the branch structure?
+
+It is possible to visualize different logics of different branches and the history, it is also clear which commits and parts that are reachable, and what will be included if you merge or create a new branch. (remember git checkout -b new_branch_name, creating a new branch from a checkout of a commit that is not the head of that/a branch.)
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging two branches together is the a combination of the original state from both branches (if they persist in both branches), a deletion of the original state if they dont exist in at least one of both branches, and the addition of anything not coming from the origin but existing in any of the two branches to merge.
+	The diagram visualizes the paths of merging and what is reachable. Therefore, providing a good visualization for its users.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+It saves a lot of time, and the fact that Git can detect when manual operation is needed makes me more comfortable that the automatic merging is not making big brutal assumptions.
