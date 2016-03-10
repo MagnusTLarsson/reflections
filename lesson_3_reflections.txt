@@ -11,3 +11,8 @@ There might be inconveniences with testing new code that is collaborately worked
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
 A fork works more or less like a clone, but on GitHub. A fork is usable for suggesting and making changes to other individuals work but without changing their repositories (which you might not have permission to do anyway). Forking makes a clone of a remote on GitHub and can be used to preserve the original. By cloning, you can create a local copy of a remote, and then use the remote to store updates (commits) which multiple users/devices can access. A branch is just a chain of commits, where each commit points to its parent(s). The remotes store commits (as branches).
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+It is possible to work offline, to know the remote's state at a moment in time and working with merging them (without internet access). Later on when you have internet access, you can fetch the new state of the remote. This approach will possibly reduce the amount of conflicts since you were able to solve some of them offline.
+
