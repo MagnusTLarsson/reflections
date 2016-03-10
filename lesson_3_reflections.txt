@@ -19,3 +19,7 @@ It is possible to work offline, to know the remote's state at a moment in time a
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 
 Store history manually (if at all), and compare different updates manually. It would take a lot more of time to do everything manually, and if you skip doing version control, you will risk being less creative and risk breaking working functionality. The only easier thing with leaving out the usage of Git and GitHub is that learning how to use the git system (which can be a bit complicated) can be ignored.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+When collaborating, it is probably not a good idea to push changes directly into master before letting your collaborators have a look at the resulting changes. The loss though is some struggle in having to merge to local master, then merge into your specific branch that you want to make a pull request from into master, and then letting people "approve" your pull request into master.
