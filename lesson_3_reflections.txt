@@ -1,0 +1,5 @@
+When would you want to create a remote repository rather than keeping all your work local?
+
+When collaborating, or using multiple platforms, it is an excellent way of accessing common information remotely.
+It is also an advantage to keep units under production in the cloud since the storage is (hopefully) more reliable, scalable, 
+secure and robust.
